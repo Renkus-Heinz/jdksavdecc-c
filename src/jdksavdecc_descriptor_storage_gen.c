@@ -80,7 +80,7 @@ uint16_t jdksavdecc_descriptor_storage_gen_read_descriptor(
         uint16_t configuration_index,
         uint16_t descriptor_type,
         uint16_t descriptor_index,
-        uint16_t *result_buffer,
+        uint8_t *result_buffer,
         uint16_t result_buffer_len) {
     struct jdksavdecc_descriptor_storage_gen *self = (struct jdksavdecc_descriptor_storage_gen *)self_;
     /* TODO: */
@@ -100,7 +100,7 @@ uint16_t jdksavdecc_descriptor_storage_gen_write_descriptor(
         uint16_t configuration_index,
         uint16_t descriptor_type,
         uint16_t descriptor_index,
-        uint16_t const *descriptor_data,
+        uint8_t const *descriptor_data,
         uint16_t descriptor_data_len) {
     struct jdksavdecc_descriptor_storage_gen *self = (struct jdksavdecc_descriptor_storage_gen *)self_;
     (void)self;
@@ -232,6 +232,8 @@ int jdksavdecc_descriptor_storage_gen_export_c(
     (void)fname_h;
     return 0;
 }
+#else
+const char *jdksavdecc_descriptor_storage_gen_file = __FILE__;
 
 #endif
 
