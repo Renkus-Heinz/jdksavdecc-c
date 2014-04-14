@@ -1,3 +1,4 @@
+
 /*
   Copyright (c) 2014, J.D. Koftinoff Software, Ltd.
   All rights reserved.
@@ -30,65 +31,11 @@
 */
 
 #include "jdksavdecc_world.h"
-#include "jdksavdecc_entity_manager.h"
+#include "jdksavdecc_maap_manager.h"
 
-const char *jdksavdecc_inflight_file = __FILE__;
+#ifdef TODO
 
-#ifdef TODO1
+#else
 
-void jdksavdecc_inflight_command_info_init(
-        struct jdksavdecc_inflight_command_info *self) {
-}
-
-int jdksavdecc_inflight_command_info_compare(
-        void const *lhs,
-        void const *rhs ) {
-}
-
-
-void jdksavdecc_inflight_commands_init( struct jdksavdecc_inflight_commands *self ) {
-}
-
-
-bool jdksacdecc_entity_manager_inflight_commands_full( struct jdksavdecc_inflight_commands *self ) {
-}
-
-
-void jdksavdecc_inflight_commands_sort(
-        struct jdksavdecc_inflight_commands *self ) {
-}
-
-
-bool jdksavdecc_inflight_commands_add(
-        struct jdksavdecc_inflight_commands *self,
-        struct jdksavdecc_inflight_command_info const *info ) {
-}
-
-
-int jdksavdecc_inflight_commands_find(
-        struct jdksavdecc_inflight_commands *self,
-        struct jdksavdecc_eui64 const *target_entity_id,
-        uint16_t sequence_id ) {
-}
-
-
-void jdksavdecc_inflight_commands_tick(
-        struct jdksavdecc_inflight_commands *self,
-        jdksavdecc_timestamp_in_milliseconds cur_time,
-        void *context ) {
-}
-
-
-void jdksavdecc_inflight_commands_remove(
-        struct jdksavdecc_inflight_commands *self,
-        int num ) {
-}
-
-
-void jdksavdecc_inflight_commands_remove_target(
-        struct jdksavdecc_inflight_commands *self,
-        struct jdksavdecc_eui64 const *target_entity_id ) {
-}
-
-
+const char *jdksavdecc_maap_manager_file = __FILE__;
 #endif
